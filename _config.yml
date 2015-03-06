@@ -4,11 +4,11 @@
 
 # Site
 title: Lab_
-subtitle:
-description:
+subtitle: Chungseok Baek's Blog
+description: Chungseok Baek's Blog
 author: Chungseok Baek
 email: csbaek0429@gmail.com
-language:
+language: English   
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
