@@ -24,13 +24,13 @@
 
     <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.3.0rc2" />
 
-  <title> Market Street Changes // Lab_ </title>
+  <title> Tag: Reference // Lab_ </title>
   
   <meta name="google-site-verification" content="hA72yXyFBv76OTBV0S1hTLMe-hNKOmuHBVkx41JZ9aA" />
 </head>
 
 <body>
-  <div class="container one-column page-post-detail">
+  <div class="container one-column ">
     <div class="headband">
 	</div>
 
@@ -90,9 +90,14 @@
             
           
 
-          <div id="posts" class="posts-expand">
+          <div id="posts" class="posts-collapse">
             
+  <div class="collection-title">
+    <h2 >Reference</h2>
+  </div>
+
   
+    
 
   <div class="post post-type-normal ">
     <div class="post-header">
@@ -103,7 +108,9 @@
           
           
             
-              Market Street Changes
+              <a class="post-title-link" href="/2015/03/06/Reference-Architecture-Drawing/">
+                Reference: Architecture Drawing
+              </a>
             
           
         </h1>
@@ -112,7 +119,7 @@
       <div class="post-meta">
           <span class="post-time">
             
-              Posted on 2015-02-28
+              03-06
             
           </span>
         
@@ -122,51 +129,11 @@
     </div>
 
     
-      <div class="post-body">
 
-        
-        
-
-        
-          <p>The videos show how the Market street have changed in the 20th century.</p>
-<h2 id="VIDEO">VIDEO</h2>
-<h3 id="1906_San_Francisco___Market_Street">1906 San Francisco _ Market Street</h3>
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/8Q5Nur642BU" frameborder="0" allowfullscreen></iframe>
-
-<h3 id="2005_San_Francisco___Market_Street">2005 San Francisco _ Market Street</h3>
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/Vqcz_tllnwM" frameborder="0" allowfullscreen></iframe>
-
-
-        
-
-      </div>
-    
-
-    
-      <div class="post-footer">
-        
-          <div class="post-tags">
-            
-              <a href="/tags/Thesis/">
-                #Thesis
-              </a>
-            
-          </div>
-        
-
-        
-
-        
-      </div>
     
   </div>
 
 
-
-  
-    <div class="comments" id="comments">
-      
-    </div>
   
 
           </div>
@@ -186,15 +153,6 @@
 <div id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-overview" data-target="site-overview">
-          Overview
-        </li>
-        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc">
-          Table Of Contents
-        </li>
-      </ul>
     
 
     <div class="site-overview">
@@ -226,10 +184,6 @@
 
     </div>
 
-    
-      <div class="post-toc sidebar-panel-active">
-        <ol class="motion-element"><li class="motion-element-item motion-element-level-2"><a class="motion-element-link" href="#VIDEO"><span class="motion-element-number">1.</span> <span class="motion-element-text">VIDEO</span></a><ol class="motion-element-child"><li class="motion-element-item motion-element-level-3"><a class="motion-element-link" href="#1906_San_Francisco___Market_Street"><span class="motion-element-number">1.1.</span> <span class="motion-element-text">1906 San Francisco _ Market Street</span></a></li><li class="motion-element-item motion-element-level-3"><a class="motion-element-link" href="#2005_San_Francisco___Market_Street"><span class="motion-element-number">1.2.</span> <span class="motion-element-text">2005 San Francisco _ Market Street</span></a></li></ol></li></ol>
-      </div>
     
   </div>
 </div>
@@ -401,50 +355,6 @@
   
 
   
-  
-    <script type="text/javascript">
-      $(document).ready(function () {
-        var html = $('html');
-
-        $('.sidebar-nav li').on('click', function () {
-          var item = $(this);
-          var activeTabClassName = 'sidebar-nav-active';
-          var activePanelClassName = 'sidebar-panel-active';
-          if (item.hasClass(activeTabClassName)) {
-            return;
-          }
-
-          var currentTarget = $('.' + activePanelClassName);
-          var target = $('.' + item.data('target'));
-
-          currentTarget.velocity('transition.slideUpOut', 200, function () {
-            target
-              .velocity('stop')
-              .velocity('transition.slideDownIn', 200)
-              .addClass(activePanelClassName);
-          });
-
-          item.siblings().removeClass(activeTabClassName);
-          item.addClass(activeTabClassName);
-        });
-
-        $('.post-toc a').on('click', function (e) {
-          e.preventDefault();
-          var offset = $(this.getAttribute('href')).offset().top;
-          html.velocity('stop').velocity('scroll', {
-            offset: offset  + 'px',
-            mobileHA: false
-          });
-        });
-
-        // Expand sidebar on post detail page by default, when post has a toc.
-        if ($('.post-toc').html().trim().length > 0 && isDesktop()) {
-          $('.sidebar-toggle').trigger('click');
-        }
-      });
-    </script>
-  
-
 
   
 

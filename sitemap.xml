@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://baek0429.github.io/2015/03/06/Reference-Architecture-Drawing/</loc>
+    <lastmod>2015-03-06T22:20:14.469Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://baek0429.github.io/2015/03/05/Design-Diagram/</loc>
+    <lastmod>2015-03-06T05:19:24.449Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://baek0429.github.io/2015/02/28/market/</loc>
     <lastmod>2015-03-06T03:59:14.728Z</lastmod>
   </url>
